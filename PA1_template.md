@@ -34,8 +34,8 @@ totalMeanSteps <- as.integer(mean(stepsPerDay$steps))
 totalMedianSteps <- as.integer(median(stepsPerDay$steps))
 ```
 
-The mean average number of steps per day is **10766 ** and 
-the medium average is **10765 **
+**The mean average number of steps per day is 10766 and 
+the medium average is 10765** 
 
 ## What is the average daily activity pattern?
 
@@ -63,8 +63,8 @@ stepsPerInterval$steps <- as.integer(stepsPerInterval$steps)
 maxStepData <- stepsPerInterval[which.max(stepsPerInterval$steps), ]
 ```
 
-The maximum number of steps was at time interval **835**, 
-with a total of **206** steps 
+**The maximum number of steps was at time interval 835, 
+with a total of 206 steps**
 
 ## Imputing missing values
 
@@ -73,7 +73,9 @@ with a total of **206** steps
 ```r
 missingValues <- sum(is.na(rawData[,]))
 ```
-The sum of missing values in the dataset is **2304 **
+
+**The sum of missing values in the dataset is 
+2304**
 
 2.My strategy for filling in all of the missing values in the dataset is to use the mean for each interval.
 

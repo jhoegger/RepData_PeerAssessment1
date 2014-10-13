@@ -233,8 +233,8 @@ title(main = &quot;Steps per Day&quot;, font.main = 4)
 totalMedianSteps &lt;- as.integer(median(stepsPerDay$steps))
 </code></pre>
 
-<p>The mean average number of steps per day is *<em>10766 *</em> and 
-the medium average is *<em>10765 *</em></p>
+<p><strong>The mean average number of steps per day is 10766 and 
+the medium average is 10765</strong> </p>
 
 <h2>What is the average daily activity pattern?</h2>
 
@@ -260,8 +260,8 @@ title(main = &quot;Steps per Time Interval&quot;, font.main = 4)
 maxStepData &lt;- stepsPerInterval[which.max(stepsPerInterval$steps), ]
 </code></pre>
 
-<p>The maximum number of steps was at time interval <strong>835</strong>, 
-with a total of <strong>206</strong> steps </p>
+<p><strong>The maximum number of steps was at time interval 835, 
+with a total of 206 steps</strong></p>
 
 <h2>Imputing missing values</h2>
 
@@ -270,7 +270,8 @@ with a total of <strong>206</strong> steps </p>
 <pre><code class="r">missingValues &lt;- sum(is.na(rawData[,]))
 </code></pre>
 
-<p>The sum of missing values in the dataset is *<em>2304 *</em></p>
+<p><strong>The sum of missing values in the dataset is 
+2304</strong></p>
 
 <p>2.My strategy for filling in all of the missing values in the dataset is to use the mean for each interval.</p>
 
